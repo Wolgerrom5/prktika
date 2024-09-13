@@ -1,0 +1,6 @@
+stroka_1=input().strip()
+stroka_2=input().strip()
+stroka_3=input().strip()
+raz1=(set(stroka_1)-set(stroka_2)-set(stroka_3)).union(set(stroka_2)-set(stroka_1)-set(stroka_3))
+raz2=raz1.union(set(stroka_3)-set(stroka_2)-set(stroka_1))
+print(raz2)
